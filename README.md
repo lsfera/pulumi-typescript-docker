@@ -12,7 +12,7 @@ Replace the yaml files and create an index.ts as needed
 log into the docker container by doing:
 
 ```bash
-docker-compose up --rm pulumi bash
+docker-compose run --rm pulumi bash
 ```
 
 Then deploy your infrastructure by issuing the command:

@@ -1,12 +1,18 @@
 {
     "name": "aws-typescript",
     "devDependencies": {
-        "@types/node": "^8.0.0"
+        "@types/jest": "^29.0.3",
+        "@types/node": "^18.7.18",
+        "ts-jest": "^29.0.1"
     },
     "dependencies": {
-        "@pulumi/aws": "^1.0.0",
-        "@pulumi/awsx": "^0.18.10",
-        "@pulumi/pulumi": "^1.0.0",
-        "minimist": "^1.2.0"
+        "@pulumi/aws": "^5.14.0",
+        "@pulumi/awsx": "^0.40.0",
+        "@pulumi/pulumi": "^3.40.1",
+        "bash": "^0.0.1",
+        "minimist": "^1.2.6"
+    },
+	"scripts": {
+        "test": "jest"
     }
 }

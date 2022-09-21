@@ -6,4 +6,6 @@ RUN curl -fsSL https://get.pulumi.com | sh
 # adds pulumi to the path
 ENV PATH /root/.pulumi/bin:$PATH
 
-RUN npm install
+COPY ./dev-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT ["dev-entrypoint.sh"]

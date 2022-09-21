@@ -1,16 +1,14 @@
-version: '2.1'
+version: '3.9'
 
 services:
   pulumi:
     image: pulumi
     build: .
     volumes:
-      - .:/usr/app
-      - /usr/app/node_modules
+      - .:/usr/app:delegated
     env_file:
       # where your pulumi token should be
       - pulumi.env
     environment:
       # needs this for deploying using windows
-    - VIRTUALENV_ALWAYS_COPY=1
-
+      - VIRTUALENV_ALWAYS_COPY=1
